@@ -1,0 +1,15 @@
+table{
+    background-color: rgb(157, 196, 17);
+    opacity: 0.8;
+    border-radius: 20%;
+}
+tr{
+    height: 50px;
+}
+th{
+    align-items: center;
+    width: 500px;
+}
+body{
+    background-color: aquamarine;
+}

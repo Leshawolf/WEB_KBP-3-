@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Задание 1</title>
+</head>
+<body>
+    <form action="Task2.html">
+    <marquee><p><font size="7" color="blue">Анкета</font></p> </marquee>
+    <hr color="black" width="97%">
+    <fieldset>
+        <legend>ФИО</legend>
+        <table>
+            <tr>
+                <th align="left">
+                    <label>Имя:   </label>
+                </th>
+                <th>
+                    <input>
+                </th>
+            </tr>
+            <tr>
+                <th align="left">
+                    <label>Фамилия: </label>
+                </th>
+                <th><input></th>
+            </tr>
+        </table>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Дата рождения</legend>
+        <table>
+            <tr>
+                <th>
+                    <label>Число:</label>
+                    <input type="number">
+                </th>
+                <th>
+                    <label>Месяц</label>
+                    <select name="month">
+                        <option>Январь</option>
+                        <option>Февраль</option>
+                        <option>Март</option>
+                        <option>Апрель</option>
+                        <option>Май</option>
+                        <option>Июнь</option>
+                        <option>Июль</option>
+                        <option>Август</option>
+                        <option>Сентябрь</option>
+                        <option>Октябрь</option>
+                        <option>Ноябрь</option>
+                        <option>Декабрь</option>
+                    </select>
+                </th>
+                <th>
+                    <label>Год</label>
+                    <input type="number">
+                </th>
+            </tr>
+        </table>
+      </fieldset>
+      <br>
+      <fieldset>
+          <legend>Пол</legend>
+          <input type="radio" id="m" name="pol">
+          <label>Муж</label>
+          <input type="radio" id="g" name="pol">
+          <label>Жен</label>   
+      </fieldset>
+      <br>
+      <button>ОК</button>
+      <input type="reset" value="Сброс данных">
+    </form>
+</body>
+</html>

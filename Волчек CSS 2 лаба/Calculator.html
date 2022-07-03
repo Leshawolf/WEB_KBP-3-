@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>HTML Calculator</title>
+</head>
+<body bgcolor= "#000000" text= "gold">
+<form name="calculator" >
+    <table align="center" border="5">
+        <tr>
+            <th>
+        <input style="width: 180px; height: 30px;" type="textfield" type="number" name="ans" value=""><br>
+    </th>
+    </tr>
+    </table>
+    <table align="center" border="10">
+        <tr align="left">
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="1" onClick="document.calculator.ans.value+='1'">   
+            </div>
+            </th>
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="2" onClick="document.calculator.ans.value+='2'">
+            </th>
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="3" onClick="document.calculator.ans.value+='3'">
+            </th>
+            <th>
+                <input style="width: 40px; height: 40px;"type="button" value="+" onClick="document.calculator.ans.value+='+'">
+            </th>
+        </tr>
+        <tr align="left">
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="4" onClick="document.calculator.ans.value+='4'">
+            </th>
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="5" onClick="document.calculator.ans.value+='5'">
+            </th>
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="6" onClick="document.calculator.ans.value+='6'">
+            </th>
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="-" onClick="document.calculator.ans.value+='-'">
+            </th>
+        </tr>
+        <tr align="left">
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="7" onClick="document.calculator.ans.value+='7'">
+            </th>
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="8" onClick="document.calculator.ans.value+='8'">
+            </th>
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="9" onClick="document.calculator.ans.value+='9'">
+            </th>
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="*" onClick="document.calculator.ans.value+='*'">
+            </th>
+        </tr>
+        <tr align="left">
+            <th>
+                <input style="width: 40px; height: 40px;" type="reset" width="200" height="200" value="CE">
+            </th>
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="0" onClick="document.calculator.ans.value+='0'">
+            </th>
+            <th>
+                <input style="width: 40px; height: 40px;" type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+            </th>
+            <th >
+                <input style="width: 40px; height: 40px;" type="button" value="/" onClick="document.calculator.ans.value+='/'">
+            </th>
+        </tr>
+    </table>
+<br>
+</form>
+</body>
+</html>

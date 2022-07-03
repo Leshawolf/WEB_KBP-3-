@@ -1,0 +1,26 @@
+body{
+    background: aqua;
+}
+table {
+    width: 100%; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+   }
+   td, th {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid #000; /* Параметры рамки */
+   }
+   th {
+    background: white; /* Цвет фона */
+    color: black;  /* Цвет текста */
+   }
+   /* tbody tr:hover {
+    background: yellow; 
+    color: black; 
+   } */
+   .first:hover{
+       color: red;
+   }
+   .second:hover {
+       background: yellow;
+       color: black;
+   }

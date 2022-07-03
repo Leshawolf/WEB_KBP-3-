@@ -1,0 +1,148 @@
+<HTML>
+<HEAD>
+<TITLE>Function_pr1</TITLE>
+<SCRIPT language="JavaScript">
+var msg1 = "Бегущая строка ";
+var msg2 = "Бегущая строка ";
+var msg3 = "Бегущая строка ";
+var id;
+var id2;
+var time = new Date;
+function scrollMsg1(){
+	//записываем в поле Msg текст бегущей строки
+	document.scrollerForm1.Msg.value = msg1;
+	
+	/*изменяем строку msg таким образом, чтобы ее
+	первый символ переместился в конец строки*/
+	msg1=msg1.substring(1,msg1.length) + msg1.substring(0,1);
+	
+	/* функция scrollMsg() вызывает сама себя на
+	выполнение через 150 миллисекунд*/
+	setTimeout("scrollMsg1()", 150);
+}
+
+function scrollMsg2(){
+document.scrollerForm2.welcomeMsg.value=msg2;
+msg2=msg2.substring(1,msg2.length)+msg2.substring(0,1);
+id=setTimeout("scrollMsg2()", 150);
+}
+
+function stopMsg2(){
+clearTimeout(id);
+}
+
+function scrollMsg3() {
+	document.scrollerForm3.Msg.value = msg3;
+	msg3=msg3.substring(1,msg3.length) + msg3.substring(0,1);
+}
+
+function calc1(){
+	var rad=parseFloat(document.data1.radius.value);
+	var s=Math.pow(rad,2)*Math.PI;
+	document.data1.result.value=s;
+}
+
+function calc2(){
+	var rad=parseFloat(document.data2.radius.value);
+	var s=Math.pow(rad,2)*Math.PI;
+	return s;
+}
+
+function calc3(rad){
+	var rad=parseFloat(rad);
+	var s=Math.pow(rad,2)*Math.PI;
+	document.data3.result.value=s;
+}
+
+function calc4(obj){
+	var rad=parseFloat(obj.radius.value);
+	var s=Math.pow(rad,2)*Math.PI;
+	obj.result.value=s;
+}
+
+function timer() {
+	setTimeout("alert('Время истекло!')", 5000);
+}
+
+function timeNow1() {
+	time = new Date;
+	document.timeForm.timee.value = time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds();
+}
+
+function timeNow2() {
+	time = new Date;
+	document.timeForm2.timee.value = time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds();
+	id2 = setTimeout("timeNow2()", 100)
+}
+
+function stopTime2() {
+	clearTimeout(id2);
+}
+</SCRIPT>
+</HEAD>
+<body onload="timer(); scrollMsg1(); setInterval(() => scrollMsg3(),150); setInterval(() => timeNow1())">
+	<FORM NAME="scrollerForm1">
+		<INPUT TYPE="text" NAME="Msg" VALUE="" size=15>
+	</FORM>
+	<FORM NAME="scrollerForm2">
+		<INPUT TYPE="text" NAME="welcomeMsg"
+			VALUE="" size=15><br>
+		<input type="button"
+			name="go" value="Пуск"
+			onClick="scrollMsg2()">&nbsp;&nbsp;
+		<input type="button" name="stop"
+			value="Стоп" onClick="stopMsg2()">
+	</FORM>
+	<FORM NAME="scrollerForm3">
+		<INPUT TYPE="text" NAME="Msg" VALUE="" size=15>
+	</FORM>
+	<form name="timeForm">
+		<input type="text" name="timee" value="" size="8" readonly>
+	</form>
+	<FORM NAME="timeForm2">
+		<INPUT TYPE="text" NAME="timee"
+			VALUE="" size=15><br>
+		<input type="button"
+			name="go" value="Пуск"
+			onClick="timeNow2()">&nbsp;&nbsp;
+		<input type="button" name="stop"
+			value="Стоп" onClick="stopTime2()">
+	</FORM>
+	<H3>Расчет площади окружности</H3>
+	<FORM name="data1">
+		Введите радиус окружности:
+		<BR><INPUT type="text" name="radius"><BR>
+		<INPUT type="button" name="but"
+			value="Рассчитать площадь"
+			onClick="calc1();"><BR><BR>
+		Результат: <INPUT type="text" name="result">
+	</FORM>
+	<FORM name="data2">
+		Введите радиус окружности:
+		<BR><INPUT type="text" name="radius"><BR>
+		<INPUT type="button" name="but"
+			value="Рассчитать площадь"
+			onClick="document.data2.result.value=calc2();">
+		<BR><BR>
+		Результат: <INPUT type="text" name="result">
+	</FORM>
+	<FORM name="data3">
+		Введите радиус окружности:
+		<BR><INPUT type="text" name="radius"><BR>
+		<INPUT type="button" name="but"
+			value="Рассчитать площадь"
+			onClick="calc3(document.data3.radius.value);">
+		<BR><BR>
+		Результат: <INPUT type="text" name="result">
+	</FORM>
+	<FORM name="data4">
+		Введите радиус окружности:
+		<BR><INPUT type="text" name="radius"><BR>
+		<INPUT type="button" name="but"
+			value="Рассчитать площадь"
+			onClick="calc4(document.data4);">
+		<BR><BR>
+		Результат: <INPUT type="text" name="result">
+	</FORM>
+</BODY>
+</HTML>

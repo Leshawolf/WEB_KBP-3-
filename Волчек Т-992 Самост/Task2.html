@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Задание 1</title>
+</head>
+<body background="fon.jpg">
+    <form action="Task.html">
+<h1 align="center"> Заполнение личных данных</h1>
+        <fieldset>
+            <legend>Ваши данные:</legend>
+            <table align="center">
+                <tr>
+                    <th align="left">
+                        <label>Имя: </label>
+                    </th>
+                    <th>
+                        <input>
+                    </th>
+                </tr>
+                <tr >
+                    <th align="left">
+                        <label>Фамилия: </label>
+                    </th>
+                    <th><input></th>
+                </tr>
+                <tr>
+                    <th align="left">
+                        <label>Пароль:</label>
+                    </th>
+                    <th>
+                        <input>
+                    </th>
+                </tr>
+                <tr>
+                    <th align="left">
+                        <label>Страна:</label>
+                    </th>
+                    <th align="left">
+                        <select name="country"> 
+                            <option>Беларусь</option>
+                            <option>Россия</option>
+                            <option>Украина</option>
+                            <option>Польша</option>
+                            <option>Литва</option>
+                            <option>Латвия</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th align="left">
+                        <label>Пол:</label> 
+
+                    </th>
+                    <th align="left">
+                        <input type="radio" name="pol" id="m">
+                        <label>Муж</label>
+                        <input type="radio" name="pol" id="g">
+                        <label>Жен</label>
+                    </th>
+                </tr>
+                <tr>
+                    <th align="left">
+                        <p>Дата рождения:</p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>День:</label>
+                    </th>
+                    <th align="left"><input size="5" type="number"></th>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Месяц:</label>
+                    </th>
+                    <th align="left">
+                        <select name="month" >
+                            <option>Январь</option>
+                            <option>Февраль</option>
+                            <option>Март</option>
+                            <option>Апрель</option>
+                            <option>Май</option>
+                            <option>Июнь</option>
+                            <option>Июль</option>
+                            <option>Август</option>
+                            <option>Сентябрь</option>
+                            <option>Октябрь</option>
+                            <option>Ноябрь</option>
+                            <option>Декабрь</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th align="center"><label>Год:</label></th>
+                    <th alig="center"><input type="number"></th>
+                </tr>
+
+
+            </table>         
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Интересы:</legend>
+            <input type="radio" name="int" id="Fotbool">
+            <label>Футбол</label>
+            <br>
+            <input type="radio" name="int" id="Voleybool">
+            <label>Волейбол</label>
+            <br>
+            <input type="radio" name="int" id="basketbool">
+            <label>Баскетбол</label>
+            <br>
+            <input type="radio" name="int" id="Tennis">
+            <label>Теннис</label>
+            <br>
+            <h4>Дополнение:</h4>
+            <textarea></textarea>
+            <br>
+            <img src="img.jpg" width="10%" hight="20%">
+        </fieldset>
+        <button>ОК</button>
+        <input type="reset" value="Сброс данных">
+    </form>
+</body>
+</html>

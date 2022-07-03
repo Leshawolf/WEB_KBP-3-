@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Функции</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="form1">
+    <table align="center">
+        <tr>
+            <th align="center">
+                <h1>Задание 1</h1>
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <label>Вес первого(путы)</label>
+                <input type="number" name="t1">
+            </th>
+        </tr>
+        <tr>
+            <th  align="center">
+                <label>Вес второго(фунты)</label>
+                <input type="number" name="t2">    
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <label>Вес второго(кг)</label>
+                <input type="number" name="t3">    
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <input type="button" value="Вычислить" onclick="areaRectangle();" name="button">
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <label>Вывод среднего значения</label>
+                <input type="number" name="res">
+            </th>
+        </tr>
+    </table>
+</form>
+<form name="form2">
+    <br>
+    <table align="center">
+        <tr>
+            <th align="center">
+                <h1>Задание 2</h1>
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <label>Введите длину x :</label>
+                <input type="number" name="x1">
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <label>Введите длину y:</label>
+                <input type="number" name="y1">
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <label>Введите высоту h :</label>
+                <input type="number" name="h1">
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <input type="button" onclick="rangeTrapec();" value="Вычислить" name="square" >
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <label>Вывод площади :</label>
+                <input type="number" name="square_number">
+            </th>
+        </tr>
+    </table>
+</form>
+
+<form name="form3">
+    <br>
+    <table align="center">
+        <tr>
+            <th align="center">
+                <h1>Задание 3</h1>
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <label>Введите трёхзначное число :</label>
+                <input type="number" name="digit" maxlength="3" minlength="3"> 
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <input type="button" onclick="digitDelete();" value="Сократить" name="button" >
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <label>Вывод сокращённого числа:</label>
+                <input type="number" name="socr_digit">
+            </th>
+        </tr>
+    </table>
+</form>
+
+<form name="form4">
+    <br>
+    <table align="center">
+        <tr>
+            <th align="center">
+                <h1>Задание 4</h1>
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <label>Введите время через которое был звук падения :</label>
+                <input type="number" name="timepad" maxlength="3" minlength="3"> 
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <input type="button" onclick="depthCounter();" value="Вычислить глубину" name="button_depth" >
+            </th>
+        </tr>
+        <tr>
+            <th align="center">
+                <label>Глубина:</label>
+                <input type="number" name="depth">
+            </th>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+#background{
+    background-color:darksalmon;
+}
+#align{
+    text-align: justify;
+}
+#Big_simbol{
+    color: blue;
+    font-size:xx-large;
+}
+p{
+    text-indent: 50px;
+    margin: 100px;
+}
+::selection{
+    background: yellow;
+}
+div::before{
+    content: "Задание№1";
+    text-indent: 50px;
+    margin: 100px;
+    position: absolute;
+    top: 0px;
+    font-size:large;
+    font-weight: bold;
+}

@@ -1,0 +1,100 @@
+/* Стиль шапки с серым фоном и отступами */
+.header {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  padding: 20px 10px;
+}
+  html{
+    /* Это изображение отобразиться на всю страницу */
+    background:url('https://look.com.ua/pic/201405/2560x1440/look.com.ua-101542.jpg') no-repeat center center;
+
+    /* Принудительно указываем высоту равную 100% от высоты окна браузера */
+    min-height:100%;
+
+    /* Магия */
+    background-size:cover;
+}
+body{
+    zoom: 75%
+}
+.profile_img{
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    height: 700px;
+
+    width: 580px;
+    border-radius: 130px;
+}
+
+.rasp{
+  vertical-align: middle;
+  margin-top: 50px ;
+  text-align: left;
+}
+
+li{
+  color: aliceblue;
+  font-size: 30px;
+}
+
+.th_profile{
+    width: 50%;
+    height: 50px;
+}
+.marg{
+  padding-top: 120px;
+}
+.th_text{
+    padding: 20px;
+    text-align: center;
+    text-align-last: center;
+    vertical-align: middle;
+    margin:10px;
+    width: 1000px;
+    height: 800px;
+    
+}
+.blur_hello{
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    width: 90%;
+    height: 100%;
+    border-radius: 100px;
+}
+/* Стиль ссылок шапки */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+/* Стиль ссылки логотипа */
+.header a.portfolio {
+  font-size: 50px;
+
+  font-weight: bold;
+}
+
+/* Изменение цвета фона при наведении курсора */
+.header-right a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Стиль активной/текущей ссылки */
+.header a.active {
+  background-color: dodgerblue;
+  border: 5px;
+  border-color: gray;
+  color: white;
+}
+
+/* Сдвигаем секцию со ссылками вправо */
+.header-right {
+  float: right;
+}
+

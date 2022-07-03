@@ -1,0 +1,10 @@
+::selection {
+    background: green; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+   }
+   body{
+       position: absolute;
+       width: 30%;
+       left: 35%;
+       text-align: justify;
+   }

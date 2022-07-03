@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        td {
+            background: white; /* Цвет фона */
+            border: 1px solid #333; /* Граница вокруг ячеек */
+            padding: 5px; /* Поля в ячейках */
+            opacity: 0.8; /* Полупрозрачность таблицы */
+            filter: alpha(Opacity=50); /* Для IE */
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body background="W9dC.gif">
+    <h1 align="center"> <font color="white">Аудио и Видео контент</font></h1>
+    <hr color="white">
+    <h1 align="center"><font color="white">Тег < audio ></font></h1>
+    <table align="center">
+        <tr>
+            <td align="center"><p><font>Элемент < audio > внедряет звуковой файл на веб-страницу.<br>
+                Это заменяемый элемент, но он не относится к пустым элементам, поэтому он может содержать и собственный контент и другие элементы.
+                <br> В своей простейшей форме элемент < audio > должен иметь только атрибут src, указывающий путь к звуковому файлу:<br>
+                < audio src="audio/file.mp3" >< /audio ></font></p></td>
+        </tr>
+        <tr><td align="center"><pre><font>Однако он редко используется в такой простой форме. 
+            По умолчанию элемент < audio > не имеет элементов управления и поэтому полностью невидимый.
+            Он будет располагаться в HTML-документе и может быть доступен в браузере или JavaScript,
+            но простое внедрение аудио файла не принесет особой пользы.
+            С помощью логического атрибута controls можно добавить к аудио-файлу его собственные элементы управления,
+             которые будут отображаться на веб-странице в месте расположения элемента < audio >:
+
+            < audio src="audio/file.mp3" controls >< /audio ></font></pre></td></tr>
+    </table>
+    <hr color="white">
+    <h1 align="center"><font color="white">Тег < video > </font></h1>
+    <table align="center">
+        <tr>
+            <td><pre><font>
+                Элемент < video > встраивает цифровое видео на веб-страницу. Как и в случае с < audio >,
+                элемент < video > может иметь атрибут src, указывающий URL-адрес видеофайла:
+
+                    < video src="video/file.mp4" controls >< /video >
+                    
+            </font></pre></td>
+        </tr>
+    </table>
+    <table align="center"> 
+        <tr>
+            <td><pre><font>
+                Элемент < video > встраивает цифровое видео на веб-страницу. Как и в случае с < audio >,
+                элемент < video > может иметь атрибут src, указывающий URL-адрес видеофайла:
+
+                    < video src="video/file.mp4" controls >< /video >
+                    
+            </font></pre></td>
+        </tr>
+        <tr>
+            <td>
+                <pre><font>Атрибут controls добавляет элементы управления, с помощью которых пользователь сможет взаимодействовать с плеером.
+                    Атрибут autoplay указывает браузеру, что видео должно начать воспроизведение сразу,
+                        как только страница будет загружена, если он не указан, то в плеере будет отображен первый кадр исходного видео.
+                    Но чаще всего он не несет никакой полезной информации о том, что будет представлено с помощью видео-контента.</font></pre>
+            </td>
+        </tr>
+    </table>
+    <hr color="white">
+    <table align="center">
+        <tr>
+            <td><button><a href="test.html">Вернуться назад</a> </button></td>
+        </tr>
+    </table>
+</body>
+</html>

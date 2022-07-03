@@ -1,0 +1,40 @@
+body{
+   background: aqua;
+}
+.menu-categories {
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    color: white;
+    width: 99%;
+ }
+ ul{
+    margin: 1px;
+    padding: 5px;
+ }
+ li {
+    margin: 1em;
+    padding: 1em;
+    list-style: none;
+ }
+ li:hover{
+    color:red;
+    background: white;
+    border-style: dashed;
+    font-size: large;
+ }
+ li::selection{
+    color:greenyellow;
+    background: green;
+ }
+
+ .linkline{
+    color:gray;
+    font-size: small;
+ }
+
+ h1{
+     font-weight: normal;
+ }

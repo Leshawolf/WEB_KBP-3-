@@ -1,0 +1,231 @@
+body{
+    display: inline-block;
+    margin: 30 auto;
+}
+.content{
+    display: inline-block;
+}
+.contact{
+    position: absolute;
+    top:13px;
+    color: white;
+    left: 80px;
+    font-weight: bold;
+}
+.call{
+    border-radius: 15px;
+    position: absolute;
+    top:24px;
+    left: 380px;
+    color: white;
+    font-weight: bold;
+    height: 33px;
+    width: 180px;
+    background-color: black;
+}
+.call:hover {
+    border: 3px ;
+}
+   
+.call:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,White,White);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: .5s;
+}
+   
+.call:hover:before {
+    filter: blur(10px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+}
+.menuTop{
+    position: absolute;
+    justify-content: space-around;
+    color: white;
+    display: flex;
+    font-weight: bold;
+    top:13px;
+    left: 650px;
+    font-family: sans-serif;
+}
+li{
+    list-style: none;
+    padding-right: 1.5em;
+}
+li:after {
+    display: block; 
+    content: ""; 
+    height: 3px; 
+    width: 0%; 
+    background-color: #225384; 
+    transition: width 0.4s ease-in-out;
+}
+.logo{
+    position: absolute;
+    width: 4%;
+    left:80px;
+}
+.menuCont{
+    position: absolute;
+    justify-content: space-around;
+    color: black;
+    display: flex;
+    top:20px;
+    left: 390px;
+    font-family: 'Courier New', Courier, sans-serif;
+}
+.items{
+    position: absolute;
+    justify-content: space-around;
+    color: darkgray;
+    display: flex;
+    top:11px;
+    right: 50px;
+}
+.about{
+    position: absolute;
+    top:90px;
+    left: 80px;
+    right: 50px;
+    text-align: justify;
+}
+h2{
+    font-family: 'Courier New', Courier, sans-serif;
+    font-weight:bold ;
+}
+h3{
+    font-family: 'Courier New', Courier, sans-serif;
+    font-weight:normal ;
+}
+.psclhov{
+    color: grey;
+    transition: 0.6s linear; 
+}
+
+.psclhov:hover{
+    color: white;
+}
+
+.downspisok2{
+    margin-top: -7%;
+    margin-left: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+.downspisok3{
+    margin-top: -10%;
+    margin-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+
+.firstinput{
+    width: 350px;
+    height:36px;
+    border-radius:20px;
+    border:0px;
+}
+.staticobj{
+    position: fixed;
+}
+.yearstr{
+    margin-left: 40%;
+    text-align: left;
+    font-style: italic;
+    font-size: x-small;
+    color: rgb(95, 95, 95);
+}
+
+a{
+    color:gray;
+    transition: 0.6s linear; 
+    text-decoration: none;
+}
+a:hover{
+    color:white;
+}
+
+.pl{
+    border:0px solid rgb(255, 255, 255);
+    transition: 0.6s linear; 
+}
+
+.pl:hover{
+    border-radius:60%;
+    border:1px solid rgb(171, 99, 204);
+}
+
+.callback{
+    font-size: small;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius:20px;
+    border:1px solid rgb(171, 99, 204);
+    transition: 0.6s linear; 
+}
+.callback:hover{
+    background-color: rgb(191, 127, 221);
+}
+
+.firstline{
+    background-color: gray;
+}
+
+table{
+    width:auto;
+    border-collapse: collapse;
+}
+
+.elpochta{
+    border-radius:20px;
+}
+
+.zagolovok{
+    margin-left: 10%;
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+}
+th{
+    color: aliceblue;
+    background-color: rgb(29, 28, 28);
+    width: 25%;
+}
+
+.downinfo{
+    margin-left: 40%;
+    width:70%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: small;
+}
+
+.downspisok{
+    margin-top: -7%;
+    margin-left: 43%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+.main{
+    left:550px;
+    right: 50px;
+    top: 400Px;
+    position: absolute;
+}
+.test{
+    size: 20px;
+}
+.lowers{
+    margin-left:600px;
+    margin-top: 280px;
+}
+

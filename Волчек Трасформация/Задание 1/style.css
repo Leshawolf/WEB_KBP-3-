@@ -1,0 +1,18 @@
+div
+{
+	font-family: "Times New Roman", Times, serif;
+	text-align: justify;
+	max-width: 400px;
+	margin-left: 35%;
+}
+p:first-letter 
+{
+	text-indent: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 200%;
+    color: red;
+}
+div
+{
+	transform: skewX(18deg);
+}

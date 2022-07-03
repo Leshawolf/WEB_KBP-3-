@@ -1,0 +1,49 @@
+﻿.lypa{
+    width: 25%;
+    transform: skewX(10deg);
+    margin-left: 600px;
+    animation-iteration-count: infinite;
+}
+
+.zeml9{
+    border: 1px solid;
+    border-color: aqua;
+    position: relative;
+    margin-left: 600px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    top: 200px;
+    animation-iteration-count: infinite;
+    background-image: url("world.png");
+    background-position: 60%;
+    background-size: 150px;
+}
+
+.lyna{
+    border: 1px solid;
+    border-color: black;
+    position: relative;
+    margin-left: 625px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    top: 70px;
+    animation: awetfgre 8s linear;
+    background-image: url("luna.png");
+    background-position: 60%;
+    animation-iteration-count: infinite;
+}
+
+@keyframes awetfgre{
+    from {
+        transform: rotate(0deg) translateX(150px) translateY(150px);
+        font-family:"Times New Roman", Times, serif
+        
+       
+      }
+    
+      to {
+        transform: rotate(360deg) translateX(150px) translateY(150px);
+      }
+}
